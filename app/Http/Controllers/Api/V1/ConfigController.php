@@ -26,7 +26,7 @@ class ConfigController extends Controller
        
         $response = Http::get('https://maps.googleapis.com/maps/api/geocode/json?latlng='
         .$request->lat.','.$request->lng
-        .'&key='."AIzaSyDADb4bMqTNCXme1UQ_OZr1xk_OTR983oE");
+        .'&key='."AIzaSyDADb4bMqTNCXUSEmeOWNKEY1UQ_OZr1xk_OTR983oE");
         return $response->json();
     }
 
@@ -43,7 +43,7 @@ class ConfigController extends Controller
 
         $response = Http::get('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='
         .$request['search_text']
-        .'&key='."AIzaSyDADb4bMqTNCXme1UQ_OZr1xk_OTR983oE");
+        .'&key='."AIzaSyDADb4bMqTNCXUSEmeOWNKEY1UQ_OZr1xk_OTR983oE");
 
         return $response->json();
     }
@@ -103,7 +103,7 @@ class ConfigController extends Controller
        
         $response = Http::get('https://maps.googleapis.com/maps/api/place/details/json?place_id='
         .$request['place_id']
-        .'&key='."AIzaSyDADb4bMqTNCXme1UQ_OZr1xk_OTR983oE");
+        .'&key='."AIzaSyDADb4bMqTNCXUSEmeOWNKEY1UQ_OZr1xk_OTR983oE");
 
         return $response->json();
     }
